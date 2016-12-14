@@ -12,7 +12,7 @@ class ScopedHash < Mash
   end
 
   def scope(scope)
-    mash = self.clone()
+    mash = Marshal.load(Marshal.dump(self))
     visit_scope(mash, scope)
     return mash
   end

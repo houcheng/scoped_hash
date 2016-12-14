@@ -13,6 +13,6 @@ task :coverage do
 end
 
 task :build do
-  cmd="gem build smash.gemspec"
+  cmd="gem build scoped_hash.gemspec"
   exec cmd
 end
